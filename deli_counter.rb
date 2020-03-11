@@ -3,7 +3,7 @@
 katz_deli = []
 
 def line(array)
-  queue = {}
+  # queue = {}
   queue_arr = []
   if array == []
     puts "The line is currently empty."
