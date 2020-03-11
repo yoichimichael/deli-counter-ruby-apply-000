@@ -27,7 +27,6 @@ def now_serving(queue)
   if queue == []
     puts "There is nobody waiting to be served!"
   else
-    puts "Currently serving #{queue[0]}."
-    queue.shift
+    puts "Currently serving #{queue.shift}."
   end
 end
