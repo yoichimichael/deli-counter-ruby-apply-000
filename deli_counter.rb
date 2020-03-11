@@ -13,7 +13,7 @@ def line(array)
     # array.each_with_index { |ele, idx| queue[idx + 1] = ele }
     # queue.each do |k, v| 
     #   queue_arr.push(k.to_s + ".", v)
-  end
+  
   puts "The line is currently: " + queue_arr.join(" ")
   end
 end
