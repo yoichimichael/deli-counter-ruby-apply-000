@@ -8,11 +8,13 @@ def line(array)
   if array == []
     puts "The line is currently empty."
   else
-    array.each_with_index { |ele, idx| queue[idx + 1] = ele }
-    queue.each do |k, v| 
-      queue_arr.push(k.to_s + ".", v)
-  	end
-    puts "The line is currently: " + queue_arr.join(" ")
+    array.each_with_index { |name, idx| queue_arr << (idx + 1).to_s + ". " + name }
+    
+    # array.each_with_index { |ele, idx| queue[idx + 1] = ele }
+    # queue.each do |k, v| 
+    #   queue_arr.push(k.to_s + ".", v)
+  end
+  puts "The line is currently: " + queue_arr.join(" ")
   end
 end
 
